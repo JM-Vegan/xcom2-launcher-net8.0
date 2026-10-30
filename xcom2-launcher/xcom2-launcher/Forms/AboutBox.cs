@@ -14,16 +14,14 @@ namespace XCOM2Launcher.Forms
 
         private void AboutBox_Load(object sender, EventArgs e)
         {
-            // Aquí el DesignMode ya funciona a la perfección
-            if (!this.DesignMode)
-            {
-                Text = $"About {AssemblyTitle}";
-                labelProductName.Text = AssemblyProduct;
-                labelVersion.Text = $"{Program.GetCurrentVersionString(true)}";
-                labelCopyright.Text = $"License {AssemblyCopyright}";
-                labelCompanyName.Text = $"Created by {AssemblyCompany}";
-                textBoxDescription.Text = AssemblyDescription;
-            }
+
+            Text = $"About {AssemblyTitle}";
+            labelProductName.Text = AssemblyProduct;
+            labelVersion.Text = $"{Program.GetCurrentVersionString(true)}";
+            labelCopyright.Text = $"License {AssemblyCopyright}";
+            labelCompanyName.Text = $"Created by {AssemblyCompany}";
+            textBoxDescription.Text = AssemblyDescription;
+
         }
 
         #region Assembly Attribute Accessors
